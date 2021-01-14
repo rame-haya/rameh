@@ -1,0 +1,36 @@
+import numpy as np
+import math 
+def pow(base_num, powe_num):
+  y= 1
+  for i in np.arange(powe_num):
+   y= y* base_num
+  return y 
+num1= float(input("enter first number: "))   
+f= input("do u want to use sqrt|cos|sin?: ")
+if f=="sqrt":
+  print(math.sqrt(num1))
+elif f=="cos":
+  print(math.cos(num1))
+elif f=="sin":
+  print(math.sin(num1))    
+else: 
+ num2= float(input("enter second number: ")) 
+ jam3= num1 + num2
+ tar7= num1 - num2
+ darb= num1 * num2
+ kisma= num1 / num2
+ os= pow(num1, num2)
+ x= input("choose 3amaliya : +|-|*|/|os: ")
+
+ if x=="+":
+  print(jam3)
+ elif x=="-":
+  print(tar7)
+ elif x=="*":
+  print(darb)
+ elif x=="/":
+  print(kisma)
+ elif x=="os":
+  print(os)
+ else:
+  print("adkhel 3amaliya sa7i7a")   
